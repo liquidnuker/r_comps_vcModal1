@@ -7,6 +7,8 @@
 @import "../animatecss/bounceIn";
 @import "../animatecss/bounceOut";
 
+// Custom toggles at bottom
+
 // .bs4modal-open      - body class for killing the scroll
 // .bs4modal           - container to scroll within
 // .bs4modal-dialog    - positioning shell for the actual modal
@@ -183,4 +185,13 @@
 
 @include media-breakpoint-up(lg) {
   .bs4modal-lg { max-width: $modal-lg; }
+}
+
+// custom toggle
+.vcmodal_show {
+  display: block;
+}
+
+.vcmodal_hide {
+  display: none;
 }
