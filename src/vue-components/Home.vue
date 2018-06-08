@@ -6,9 +6,10 @@
     <div :class="{
       'bs4modal vcmodal_hide': !vcModal1_active,
       'bs4modal vcmodal_show':  vcModal1_active}"
-      data-backdrop="static" tabindex="-1" role="dialog"
+      data-backdrop="static" tabindex="-1" role="dialog" 
+      id="bs4modal" 
       aria-labelledby="bs4modal_title" aria-hidden="true"
-      @click="toggleModal(false)">
+      @click="toggleMainModal($event)">
       <div class="bs4modal-dialog bs4modal-md" role="document">
         <div :class="{
           'bs4modal-content': !vcModal1_animateEntry,
@@ -47,6 +48,11 @@
     methods: {
       toggleModal: function(isActive) {
         this.vcModal1_active = isActive;
+      },
+      toggleMainModal: function(event) {
+        if (event.target.id === "bs4modal") {
+          this.toggleModal(false);
+        }
       }
     }
   }
