@@ -1,2 +1,53 @@
 // main modal styles
 @import "../vendor/bootstrap4/bs4modal1";
+
+// vcmodal2
+// ==================================================/
+.vcmodal2 {
+  .bs4modal-body {
+    @extend %pos--relative;
+    // padding: 0;
+
+    .vcmodal2_prevholder,
+    .vcmodal2_nextholder {
+      @extend %display--none;
+    }
+
+    &:hover {
+      .vcmodal2_prevholder,
+      .vcmodal2_nextholder {
+        @extend %display--block;
+      }
+    }
+
+    .vcmodal2_prevholder,
+    .vcmodal2_nextholder {
+      span,
+      svg {
+        @include center-h--unk;
+      }
+    }
+  }
+
+  .vcmodal2_prevholder {
+    @extend %pos--absolute;
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .vcmodal2_nextholder {
+    @extend %pos--absolute;
+    right: 0;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    z-index: 2;
+  }
+}
