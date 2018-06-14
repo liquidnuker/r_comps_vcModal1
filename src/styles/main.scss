@@ -9,11 +9,10 @@
 @import "vendor/normalize"; 
 @import "base/fonts";
 @import "components/buttons";
-@import "components/modals";
 
 @import "vendor/mq"; 
 @import "vendor/bootstrap4/bootstrap-grid";
-
+@import "components/modals";
 
 // show the active breakpoint (_mq.scss)
 // ==================================================/
