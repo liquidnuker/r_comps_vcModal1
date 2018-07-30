@@ -14,7 +14,7 @@
         'bs4modal-content': !vcModal1_animateEntry,
         'bs4modal-content animated bounceIn': vcModal1_animateEntry}">
         <div class="bs4modal-header">
-          <h5 class="bs4modal-title">vcModal2 title</h5>
+          <h5 class="bs4modal-title">vcModal1 title</h5>
           <button type="button" class="btn btn1-01" data-dismiss="bs4modal" aria-label="Close" @click="toggleModal(false)">
           <span aria-hidden="true">&times;</span>
           </button>

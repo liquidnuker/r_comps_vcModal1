@@ -52,7 +52,7 @@
   export default {
     data() {
       return {
-        vcModal2_active: true,
+        vcModal2_active: false,
         vcModal2_animateEntry: true
       }
     },
